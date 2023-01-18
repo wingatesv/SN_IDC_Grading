@@ -214,12 +214,12 @@ def plot_confusion_matrix(cm, classes, dir,
     plt.savefig(dir)
     plt.close()
 
-"""# Temp 1
+"""# Temp 1 (This process is repeated with Temp2-Temp5)
 
 # Setup SN Dataset
 """
 
-# Reinhard
+# SPCN
 sn_label = 'V'
 temp_img = 'Temp1'
 
