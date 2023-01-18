@@ -49,6 +49,10 @@ StainGAN and StainNet Techniques:
 Kang et al. StainNet: a fast and robust stain normalization network, (2022). https://github.com/khtao/StainNet
 
 ## Data Availability
+The FBCG Dataset:
+
+![Screenshot 2023-01-18 at 3 37 23 PM](https://user-images.githubusercontent.com/56868536/213111557-8ad6de49-639e-477d-a259-a359d556a6c1.png)
+
 The original datasets used to form the Four Breast Cancer Grades (FBCG) Dataset:
 
 BreaKHis Dataset: https://web.inf.ufpr.br/vri/databases/breast-cancerhistopathological-database-breakhis/
