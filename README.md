@@ -40,9 +40,13 @@ Reinhard, Macenko and SPCN Techniques:
 
 P. Byfield, StainTools, (2020). https://github.com/Peter554/StainTools
 
+ACD Techniques:
+
+Zheng et al. Adaptive Color Deconvolution for Histological WSI Normalization, (2019). https://github.com/Zhengyushan/adaptive_color_deconvolution
+
 StainGAN and StainNet Techniques:
 
-Kang et al. StainNet: a fast and robust stain normalization network, (2022). https://github.com/khtao/StainNet.git
+Kang et al. StainNet: a fast and robust stain normalization network, (2022). https://github.com/khtao/StainNet
 
 ## Data Availability
 The original datasets used to form the Four Breast Cancer Grades (FBCG) Dataset:
