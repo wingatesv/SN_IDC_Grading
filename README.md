@@ -18,18 +18,17 @@ Figure 1. The overall methodology of the study. (1) The Four Breast Cancer Grade
 Figure 2. The structure of the IDC grading classifier: (a) input layer, (b) augmentation layers, (c) feature extractor (non-trainable), (d) dropout layer, (e) dense layer (trainable), and (f) output layer.
 ## Results
 
-![image](https://user-images.githubusercontent.com/56868536/212928361-90a8cb8c-59cd-43d1-92e4-4014d1103c93.png)
+![image](https://user-images.githubusercontent.com/56868536/216745586-1bc2da0e-b5e8-42b3-b6d9-f7733d37ed5e.png)
 
-Figure 3. The mean test Balanced Accuracy (BAC) scores of the seven models across T with different conventional SN techniques. The ACD technique tops other techniques across all templates but failed to outperform the baseline result.
+Figure 3. The mean test BAC scores of the seven models across T with different conventional SN techniques from Table 7, Table 8, Table 9 and Table 10 in the Appendix. The ACD technique tops other techniques across all templates but failed to outperform the baseline result.
 
+![image](https://user-images.githubusercontent.com/56868536/216745608-4f78b616-def4-47e1-8ca3-4fe9805656ee.png)
 
-![image](https://user-images.githubusercontent.com/56868536/212928473-dd7fb288-e9d2-485e-bb50-a9b405c7f754.png)
+Figure 4. The test BAC scores of seven models trained with StainGAN-normalised, StainNet-normalised and non-normalised datasets. Although the results are comparable among the deep learning-based SN techniques, the mean BAC scores of the seven models trained in the StainGAN-normalised dataset achieve slightly higher than models trained in the StainNet-normalised dataset but lower than the baseline result.
 
-Figure 4. The test BAC scores of seven models trained with StainGAN-normalised and StainNet-normalised FBCG datasets. Although the results are comparable, the mean BAC scores of the seven models trained in the StainGAN-normalised dataset achieve higher than models trained in the StainNet-normalised dataset but lower than the baseline result.
+![image](https://user-images.githubusercontent.com/56868536/216745627-ae59237d-8f6b-4665-a563-366a3f9fd8ec.png)
 
-![image](https://user-images.githubusercontent.com/56868536/212928536-3a6835e2-200e-4091-b2fd-e859ccc3ccc4.png)
-
-Figure 5. The mean test BAC scores of the seven models trained in six different stain-normalised and the non-normalised FBCG datasets. Among the six SN techniques, the StainGAN technique outperforms other SN technique. However, the baseline result tops all SN results by 0.0112 score.
+Figure 5. The mean test BAC scores of the seven models trained in six different stain-normalised and the non-normalised FBCG datasets. Among the six SN techniques, the StainGAN technique outperforms other SN technique. However, the baseline result tops the best SN results by 0.0112 score.
 
 ## Conclusion
 In this investigation, we set out to address the question of the effectiveness of Stain Normalisation (SN) in the task of Invasive Ductal Carcinoma (IDC) grading. To accomplish this, we utilised seven pre-trained Convolutional Neural Network (CNN) models as feature extractors to classify the FBCG dataset into four grades (G0, G1, G2, and G3). The FBCG dataset was normalised using six techniques: Reinhard, Macenko, SPCN, ACD, StainGAN, and StainNet. We also selected five templates for the conventional SN techniques to investigate their impacts on each method. We obtained the p-value of 0.11 when comparing test mean BAC score between models trained with the StainGAN-normalised (best SN technique) image and models trained with the non-normalised images, indicating a statistically insignificant difference as the null hypothesis: “A CNN trained with a stain-normalised dataset has no effect on the IDC grading accuracy”, is failed to be rejected. This contradicts the widely held belief that SN is crucial for histopathological classification tasks. In a case where SN is required in the image pre-processing pipeline, we recommend StainGAN, StainNet and ACD techniques over Reinhard, Macenko and SPCN techniques attributed to their excellent performance relatively in normalising images.
