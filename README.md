@@ -78,3 +78,5 @@ If you find this repository useful or use it in your research, please consider c
     year = {XXX}
 }
 ```
+# Pytorch Implementation
+check this out for pytorch implementation: https://github.com/wingatesv/IDC_Grading_PyTorch.git
