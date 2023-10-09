@@ -202,7 +202,11 @@ def main():
     parser.add_argument('--save_dir', type=str, required=True, help='Save directory for the SN dataset')
     args = parser.parse_args()
 
-    full_temp_img_path = f"{args.template_image_path}/{args.template_image_name}.png"
+    if args.template_image_name != 'Temp6':
+      full_temp_img_path = f"{args.template_image_path}/{args.template_image_name}.png"
+    else:
+      full_temp_img_path = f"{args.template_image_path}/{args.template_image_name}.jpg"
+        
     # Create a directory to save the stain-normalized dataset
     stain_normalized_dataset_path = f'{args.save_dir}/{args.stain_normalization_technique}_{args.template_image_name}_FBCG_Dataset'
     os.makedirs(stain_normalized_dataset_path, exist_ok=True)
