@@ -1,3 +1,27 @@
+import subprocess
+import pkg_resources
+
+def install_required_packages():
+    # List of required packages
+    required_packages = ['keras-preprocessing']
+
+    installed_packages = [pkg.key for pkg in pkg_resources.working_set]
+
+    missing_packages = [pkg for pkg in required_packages if pkg not in installed_packages]
+
+    if missing_packages:
+        try:
+            for package in missing_packages:
+                # Install missing packages
+                subprocess.run(["pip", "install", package])
+
+            print("Packages", ", ".join(missing_packages), "have been successfully installed.")
+        except Exception as e:
+            print("An error occurred during package installation:", str(e))
+    else:
+        print("Packages 'keras-preprocessing' is already installed.")
+
+install_required_packages()
 import os
 import time
 import pathlib
