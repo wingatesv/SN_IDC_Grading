@@ -1,6 +1,6 @@
 # import libraries
 import pandas as pd
-from sklearn.utils import shuffle 
+from sklearn.utils import shuffle
 import sklearn
 import sklearn.model_selection
 from pathlib import Path
@@ -43,8 +43,8 @@ def main(base_path, save_dir):
     for train_index, val_index in skf.split(np.zeros(len(data)),Y):
         training_data = data.iloc[train_index]
         validation_data = data.iloc[val_index]
-        training_data.to_csv(f'{save_dir}/training_data_400x{i}.csv')
-        validation_data.to_csv(f'{save_dir}/validation_data_400x{i}.csv')
+        training_data.to_csv(f'{save_dir}/training_data_{i}.csv')
+        validation_data.to_csv(f'{save_dir}/validation_data_{i}.csv')
         print(f"Fold {i} CSV files have been saved.")
         i += 1
 
@@ -52,8 +52,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Generate five-fold cross-validation CSV files.')
     parser.add_argument('--base_path', type=str, help='The base path of the dataset.')
     parser.add_argument('--save_dir', type=str, help='The directory to save the CSV files.')
-    
-    args = parser.parse_args()
-    
-    main(args.base_path, args.save_dir)
 
+    args = parser.parse_args()
+
+    main(args.base_path, args.save_dir)
