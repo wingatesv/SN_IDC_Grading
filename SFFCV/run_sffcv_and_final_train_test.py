@@ -283,6 +283,10 @@ def plot_loss_acc_curve(history, save_figure_dir, dataset_name, model_name, cv=T
   Args:
       history: Training history.
   """
+  #Create the directory if it doesn't exist
+  if not os.path.exists(save_figure_dir):
+        os.makedirs(save_figure_dir)
+      
   acc = history.history['accuracy']
   val_acc = history.history['val_accuracy']
 
@@ -316,6 +320,10 @@ def plot_loss_acc_curve(history, save_figure_dir, dataset_name, model_name, cv=T
 
 
 def roc_auc_curve(y_label, y_pred, save_figure_dir, dataset_name, model_name, cv=True, fold_var=None):
+  #Create the directory if it doesn't exist
+  if not os.path.exists(save_figure_dir):
+        os.makedirs(save_figure_dir)
+      
   y_pred = tf.keras.utils.to_categorical(y_pred, num_classes=4)
   y_label = tf.keras.utils.to_categorical(y_label, num_classes=4)
   # Plot ROC Curve
