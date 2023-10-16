@@ -53,7 +53,7 @@ The FBCG Dataset:
 
 The original datasets used to form the Four Breast Cancer Grades (FBCG) Dataset:
 
-BreaKHis Dataset: https://web.inf.ufpr.br/vri/databases/breast-cancerhistopathological-database-breakhis/
+BreaKHis Dataset: https://web.inf.ufpr.br/vri/databases/breast-cancer-histopathological-database-breakhis/
 
 BCHI Dataset: https://zenodo.org/record/834910#.WXhxt4jrPcs.
 
