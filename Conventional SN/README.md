@@ -1,6 +1,6 @@
-# Convolutional Stain Normalization with conv_sn_dataset.py
+# Conventional Stain Normalization with conv_sn_dataset.py
 
-This Python script is designed for stain normalization using convolutional neural networks (CNNs). It offers various stain normalization techniques, including Reinhard, Macenko, Vahadane, and ACD (Adaptive Color Deconvolution). The script can be used to preprocess and save transformed images from a given dataset.
+This Python script is designed for stain normalization using conventional methods. It offers various stain normalization techniques, including Reinhard, Macenko, Vahadane, and ACD (Adaptive Color Deconvolution). The script can be used to preprocess and save transformed images from a given dataset.
 
 ## Prerequisites
 
