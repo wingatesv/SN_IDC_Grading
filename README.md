@@ -1,4 +1,4 @@
-# Evaluating the Effectiveness of Stain Normalization Techniques in Automated Grading of Invasive Ductal Carcinoma Histopathological Images?
+# Evaluating the Effectiveness of Stain Normalization Techniques in Automated Grading of Invasive Ductal Carcinoma Histopathological Images
 ## Abstract
 **Background and Objective**: Debates persist regarding the impact of Stain Normalization (SN) on recent breast cancer histopathological studies. While some studies propose no influence on classification outcomes, others argue for improvement. This study aims to assess the efficacy of SN in breast cancer histopathological classification, specifically focusing on Invasive Ductal Carcinoma (IDC) grading using Convolutional Neural Networks (CNNs). The null hypothesis asserts that SN has no effect on the accuracy of CNN-based IDC grading, while the alternative hypothesis suggests the contrary. 
 
@@ -62,19 +62,19 @@ BCHI Dataset: https://zenodo.org/record/834910#.WXhxt4jrPcs.
 If you find this repository useful or use it in your research, please consider citing our paper:
 ```
 @article{
-    XXX,
-    author = {XXX},
-    doi = {XXX},
-    issn = {XXX},
-    journal = {XXX},
-    month = {XXX},
-    number = {XXX},
-    pages = {XXX},
-    publisher = {XXX},
-    title = {{XXX}},
-    url = {XXX},
-    volume = {XXX},
-    year = {XXX}
+    Voon2023,
+    author = {Voon, Wingates and Hum, Yan Chai and Tee, Yee Kai and Yap, Wun-She and Nisar, Humaira and Mokayed, Hamam and Gupta, Neha and Lai, Khin Wee},
+    doi = {10.1038/s41598-023-46619-6},
+    issn = {2045-2322},
+    journal = {Scientific Reports},
+    month = {November},
+    number = {1},
+    pages = {20518},
+    publisher = {Nature Publishing Group},
+    title = {Evaluating the effectiveness of stain normalization techniques in automated grading of invasive ductal carcinoma histopathological images},
+    url = {https://doi.org/10.1038/s41598-023-46619-6},
+    volume = {13},
+    year = {2023}
 }
 ```
 # Pytorch Implementation
